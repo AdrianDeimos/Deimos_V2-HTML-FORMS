@@ -1,0 +1,92 @@
+header {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1000;
+    
+}
+.cuisine-heading {
+    text-align: center; /* Center text */
+    font-size: 35px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+   
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 25px;
+    
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+    
+}
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.menu-item {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 20px; /* Increased padding for larger container */
+    margin: 20px; /* Increased margin for spacing */
+    width: 270px; /* Increased width for larger container */
+    text-align: center;
+    
+}
+.menu-item img {
+    width: 260px; /* Set a fixed width for the images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper spacing */
+    margin: 0 auto 10px; /* Center the image horizontally and add space below */
+}
+.add-to-cart-btn {
+    background-color: #fceb05;
+    color: rgb(12, 12, 12);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#cart-items {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+#goBackButton {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+#goBackButton:hover {
+    text-decoration: underline;
+}
+
+#goNextButton {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333; /* Adjust color as needed */
+    cursor: pointer;
+    margin-bottom: 20px; /* Adjust as needed */
+    margin-left: 1600px;
+}
+
+#goNextButton:hover {
+    text-decoration: underline;
+}
+

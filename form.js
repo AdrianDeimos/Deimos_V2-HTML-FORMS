@@ -28,3 +28,7 @@ dropdowns.forEach(dropdown => {
         });
     });
 });
+
+function goBack() {
+    window.history.back();
+}

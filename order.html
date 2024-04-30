@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css" />
+    <link rel="icon" href="img/Logo.png.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/Logo.png.png" type="image/x-icon" />  
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+            <ul>
+                <li id="JapaneseHeader">Japanese</li>
+                <li id="ItalianHeader">Italian</li>
+                <li id="IndianHeader">Indian</li>
+                <li id="FilipinoHeader">Filipino</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="navigation">
+            <a id="goBackButton" href="javascript:void(0);" onclick="goBack()">&larr; Go Back</a>
+            <a id="goNextButton" href="form.html">Next &rarr;</a>
+        </div>
+    </div>
+    <h2 class="cuisine-heading">Japanese Cuisine</h2>
+    <div id="Japanese" class="menu-container">
+        <div class="menu-item">
+            <img src="img/jap.jpg" alt="Pizza">
+            <h3>Hamamatsu gyoza</h3>
+            <p>PHP 250.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Hamamatsu gyoza')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/jap1.jpg" alt="Pizza">
+            <h3>Tonkotsu ramen</h3>
+            <p>PHP 200.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Tonkotsu ramen')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/jap2.jpg" alt="Pizza">
+            <h3>Kaisendon</h3>
+            <p>PHP 250.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Kaisendon')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/jap3.jpg" alt="Pizza">
+            <h3>Otoro nigiri sushi</h3>
+            <p>PHP 250.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Otoro nigiri sushi')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/jap4.jpg" alt="Pizza">
+            <h3>Karē</h3>
+            <p>PHP 200.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Karē')">Add to Cart</button>
+        </div>
+    </div>
+    <h2 class="cuisine-heading">Italian Cuisine</h2>
+    <div id="Italian" class="menu-container">
+        <div class="menu-item">
+            <img src="img/ital-carbonara.jpg" alt="Pizza">
+            <h3>Carbonara</h3>
+            <p>PHP 200.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Carbonara')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/ital-lasagna.jpg" alt="Pizza">
+            <h3>Lasagna</h3>
+            <p>PHP 150.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Lasagna')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/ital-pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>PHP 200.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Pizza')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/ital-risotto.jpg" alt="Pizza">
+            <h3>Rissoto</h3>
+            <p>PHP 150.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Rissoto')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/ital-Tortellini.jpg" alt="Pizza">
+            <h3>Tortellini</h3>
+            <p>PHP 250.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Tortellini')">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2 class="cuisine-heading">Indian Cuisine</h2>
+    <div id="Indian" class="menu-container">
+        
+        <div class="menu-item">
+            <img src="img/indian.jpg" alt="Pizza">
+            <h3>Butter Garlic Naan</h3>
+            <p>PHP 250.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Butter Garlic Naan')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/indian1.jpg" alt="Pizza">
+            <h3>Amritsari kulcha</h3>
+            <p>PHP 250.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Amritsari kulcha')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/indian2.jpg" alt="Pizza">
+            <h3>Butter chicken</h3>
+            <p>PHP 300.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Butter chicken')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/indian3.jpg" alt="Pizza">
+            <h3>Tikka</h3>
+            <p>PHP 200.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Tikka')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/indian4.jpg" alt="Pizza">
+            <h3>Hyderabadi biryani</h3>
+            <p>PHP 300.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Hyderabadi biryani')">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2 class="cuisine-heading">Filipino Cuisine</h2>
+    <div id="Filipino" class="menu-container">
+        
+        <div class="menu-item">
+            <img src="img/fil.jpg" alt="Pizza">
+            <h3>Pork Adobo</h3>
+            <p>PHP 200.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Pork Adobo')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/fil1.jpg" alt="Pizza">
+            <h3>Lechon</h3>
+            <p>PHP 350.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Lechon')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/fil2.jpg" alt="Pizza">
+            <h3>Sisig</h3>
+            <p>PHP 200.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Sisig')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/fil3.jpg" alt="Pizza">
+            <h3>Lumpia Shanghai</h3>
+            <p>PHP 200.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Lumpia Shanghai')">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="img/fil4.jpg" alt="Pizza">
+            <h3>Tortang Talong</h3>
+            <p>PHP 150.00</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Tortang Talong')">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <div id="cart">
+        <h2>Cart:</h2>
+        <ul id="cart-items">
+        </ul>
+    </div>
+    
+    <script src="order.js"></script>
+</body>
+</html>

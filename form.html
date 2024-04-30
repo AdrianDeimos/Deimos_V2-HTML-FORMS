@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="img/Logo.png.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/Logo.png.png" type="image/x-icon" />
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a id="goBackButton" href="javascript:void(0);" onclick="goBack()">&larr; Go Back</a>
+            <img src="img/logo.png">
+        </div>
+        <h1 class="title">Welcome to Our Culinary Journey</h1>
+        <h2 class="subtitle">Let's Craft Your Culinary Adventure</h2>
+        <form id="order-form">
+            <div class="section">
+                <h3 class="section-title">Personal Information</h3>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" >
+                </div>
+                <div class="form-group">
+                    <label for="age">Your Age:</label>
+                    <input type="number" id="age" name="age" placeholder="Enter your age" >
+                </div>
+            </div>
+            <div class="section">
+                <h3 class="section-title">Order Preferences</h3>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected"> Select Dining Option</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>Dine-In</li>
+                        <li>Take Out</li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected"> Select Payment Method</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>Cash</li>
+                        <li>Credit Card</li>
+                        <li>Debit Card</li>
+                    </ul>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comments">Any Special Requests or Dietary Restrictions?</label>
+                    <textarea id="comments" name="comments" placeholder="Feel free to share any instructions or preferences"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn">Confirm Your Culinary Voyage</button>
+            <button type="button" class="btn cancel">Cancel</button>
+        </form>
+        
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
